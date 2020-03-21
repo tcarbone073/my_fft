@@ -1,4 +1,4 @@
-function plot_data(t,data)
+function plot_data(t,data,x_label,y_label,x_lim,y_lim)
 %
 %
 %
@@ -12,10 +12,13 @@ plot(t,data);
 
 % Format axes
 grid on
-xlabel('Time (seconds)');
-ylabel('Amplitube');
-xlim([0 60])
-ylim([-2 2])
+xlabel(x_label);
+ylabel(y_label);
+xlim(x_lim)
+
+if ~isempty(y_lim)
+    ylim([-2 2])
+end
 
 
 end
