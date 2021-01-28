@@ -39,7 +39,7 @@ switch WIN_TYPE
         fig_title = 'N-Point Flattop Window';
         
     case 'none'
-        WIN_VEC = ones(N_SAMPLES);
+        WIN_VEC = ones(N_SAMPLES,1);
         fig_title = 'No Window';
         
 end

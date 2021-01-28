@@ -17,7 +17,7 @@ ylabel(y_label);
 xlim(x_lim)
 
 if ~isempty(y_lim)
-    ylim([-2 2])
+    ylim(y_lim)
 end
 
 
